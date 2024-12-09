@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú principal - Veterinaria GP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="veterinaria-logo.png" alt="Logo Veterinaria GP">
+            <h1>Menú Principal</h1>
+        </div>
+        <div class="form">
+            <button class="submit-btn" onclick="window.location.href='registro.html'">Registrar Mascota</button>
+            <button class="submit-btn" onclick="window.location.href='consulta.html'">Consultar Estado</button>
+        </div>
+    </div>
+<script>
+    // Simula una redirección tras validación de usuario
+    document.querySelector("form").onsubmit = function(event) {
+        event.preventDefault(); 
+        window.location.href = 'principal.txt';
+    };
+</script>
+
+</body>
+</html>
